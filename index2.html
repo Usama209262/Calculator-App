@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator app</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+
+<body>
+
+    <div class="heading">
+        <div class="calc">
+            <h5>Calc</h5>
+        </div>
+        <div class="Theme">
+            <h5>Theme</h5>
+            <button class="button"></button>
+
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="input">
+            <input type="text" id="inputBox" placeholder="0">
+        </div>
+        <table class="table" border="1">
+            <tr>
+                <td onclick="addValue('+')">+</td>
+                <td onclick="addValue('-')">-</td>
+                <td onclick="addValue('*')">*</td>
+                <td onclick="addValue('/')">/</td>
+            </tr>
+            <tr>
+                <td onclick="addValue('7')">7</td>
+                <td onclick="addValue('8')">8</td>
+                <td onclick="addValue('9')">9</td>
+                <td class="ac" rowspan="3" onclick="allClearValue('AC')">Ac</td>
+            </tr>
+            <tr>
+                <td onclick="addValue('4')">4</td>
+                <td onclick="addValue('5')">5</td>
+                <td onclick="addValue('6')">6</td>
+            </tr>
+            <tr>
+                <td onclick="addValue('1')">1</td>
+                <td onclick="addValue('2')">2</td>
+                <td onclick="addValue('3')">3</td>
+            </tr>
+            <tr>
+                <td onclick="addValue(0)">0</td>
+                <td onclick="addValue('.')">.</td>
+                <td onclick="singleClearValue('C')">C</td>
+                <td class="Equal" onclick="result()">=</td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="./app2.js"></script>
+
+</html>
